@@ -7,14 +7,13 @@ from oauth2client.service_account import ServiceAccountCredentials
 import gspread
 scope = ['https://www.googleapis.com/auth/spreadsheets',
          'https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    r"C:\Users\aubin\OneDrive\Documents\DataCode\SheetsAPIkey.json", scope)
+creds = <Insert your creds here>
 client = gspread.authorize(creds)
 sheet = client.open("YoutubeComments").sheet1
 
 
 # Youtube video ID :
-VideoID = "ezBnVjmsTP8"
+VideoID = <Insert de link of the video you want to scrap>
 
 # Access to Youtube Url :
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
