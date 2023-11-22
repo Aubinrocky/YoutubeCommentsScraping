@@ -19,7 +19,7 @@ VideoID = <Insert de link of the video you want to scrap>
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 api_service_name = "youtube"
 api_version = "v3"
-DEVELOPER_KEY = "AIzaSyD2_jrLtJ51j01YETaBrSmDFBrKcPcMx80"
+DEVELOPER_KEY = <Insert your developer key>
 
 # Collection of Data
 youtube = googleapiclient.discovery.build(
